@@ -1,0 +1,14 @@
+<div class="editButtonDisplayFlex">
+    <button type="button" name="{{rank}}" style="background: transparent; box-shadow: none!important;"
+        class="btn tbl-btn">
+        <fa-icon [icon]="faEdit"
+            *ngIf="!isFieldsEditable" (click)="onEdit('edit')"></fa-icon>
+        <fa-icon [icon]="faSave" style="margin-right: 4px;"
+            *ngIf="isFieldsEditable" (click)="onEdit('cross')"></fa-icon>
+    </button>
+    <div style="width: 20px"></div>
+    <button type="button" style="background: transparent; box-shadow: none!important;"
+        class="btn tbl-btn" (click)=onRemove()>
+        <fa-icon [icon]="faTrash"></fa-icon>
+    </button>
+</div>

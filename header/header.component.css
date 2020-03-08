@@ -1,0 +1,9 @@
+.app-header{
+    width: 100%;
+    padding: 20px!important;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 999;
+}

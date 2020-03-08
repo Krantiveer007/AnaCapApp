@@ -1,0 +1,23 @@
+<div class="row app-content">
+    <div class="app-info">
+        <h3>Games Grid</h3>
+        <div class='gridInfo row'>
+            <div class="col-auto">
+                <p> <span>Filter : </span>Name and Publisher (click the filter icon i.e.,
+                    <fa-icon [icon]="faBars"></fa-icon> ) </p>
+                <p> <span>Sort : </span>Rank and Year (click on the column header to sort).</p>
+            </div>
+            <div class="col-auto ml-auto">
+                <p> <span>Edit : </span>Click pencil icon (i.e.,
+                    <fa-icon [icon]="faEdit"></fa-icon> ) in Action column or on the cell to start editing.</p>
+                <p> <span>Delete : </span>Click trash icon (i.e.,
+                    <fa-icon [icon]="faTrash"></fa-icon> )to delete the row.</p>
+                ( Note : All attributes except rank and year are editable )
+            </div>
+        </div>
+    </div>
+    <ag-grid-angular class="ag-theme-balham-dark topGamesGrid" [rowData]="rowData" [columnDefs]="columnDefs"
+        [gridOptions]="gridOptions" (gridReady)="onGridReady($event)" [pagination]="true"
+        [stopEditingWhenGridLosesFocus]="true">
+    </ag-grid-angular>
+</div>

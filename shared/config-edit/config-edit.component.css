@@ -1,0 +1,8 @@
+.tbl-btn {
+    background: white;
+    padding: 0;
+    cursor: pointer;
+}
+.editButtonDisplayFlex {
+    display: flex;
+}
