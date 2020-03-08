@@ -1,0 +1,28 @@
+.app-content {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    padding: 20px!important
+  }
+
+.app-info {
+  height : calc(100% - 380px);
+  width: inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+.topGamesGrid {
+  height: 380px;
+  width: inherit;
+}
+.gridInfo{
+  font-size: 12px;
+}
+p{
+  margin: 0;
+}
+span {
+  font-weight: bold;
+}
